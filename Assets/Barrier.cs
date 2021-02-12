@@ -8,10 +8,12 @@ public class Barrier : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        //if(collider.gameObject.tag == "ProjectileAlien")
-        
-        Destroy(collider.gameObject);
-        this.GetComponent<MeshRenderer>().material.color = Color.red;
+        if(collider.gameObject.tag != "Player")
+        {
+            Destroy(collider.gameObject);
+            this.GetComponent<MeshRenderer>().material.color = Color.red;
+
+        }
 
         Invoke("OnTriggerExit2D", 0.2f);
         

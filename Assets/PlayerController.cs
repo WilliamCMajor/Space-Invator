@@ -72,6 +72,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = transform.position + new Vector3(0, 0.5f, 0);
         }
+
+        if (collider.gameObject.CompareTag("Barrier"))
+        {
+            transform.position = transform.position + new Vector3(0, -0.5f, 0);
+        }
     }
 
     IEnumerator ShootDelay()
