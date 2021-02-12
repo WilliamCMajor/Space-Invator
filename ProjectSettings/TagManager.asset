@@ -6,6 +6,12 @@ TagManager:
   tags:
   - WallLeft
   - WallRight
+  - ShipAllien
+  - ProjectileAlien
+  - ProjectilePlayer
+  - DeathZoneTop
+  - DeathZoneBottom
+  - Barrier
   layers:
   - Default
   - TransparentFX

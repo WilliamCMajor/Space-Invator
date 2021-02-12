@@ -4,7 +4,11 @@ public class DeathZone : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Destroy(collider.gameObject); // we can destroy certain object with tag
+        if((collider.gameObject.tag == "ProjectileAlien") || (collider.gameObject.tag == "ProjectilePlayer"))
+        {
+            Destroy(collider.gameObject); // we can destroy certain object with tag
+
+        }
         
     }
 

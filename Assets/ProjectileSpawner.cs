@@ -15,7 +15,7 @@ public class ProjectileSpawner : MonoBehaviour
         if(rando == 1)
         {
             GameObject projectile = Instantiate(projectilePrefab);
-            projectile.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            projectile.transform.position = new Vector3(transform.position.x, transform.position.y - 1.0f, transform.position.z);
 
         }
         
@@ -25,9 +25,13 @@ public class ProjectileSpawner : MonoBehaviour
     {
         if(collider.gameObject.CompareTag("WallLeft") || collider.gameObject.CompareTag("WallRight"))
         {
-            this.transform.parent.GetComponent<ShipParent>().direction.x *= -1;
-            //this.direction.x *= -1;
+            this.transform.parent.GetComponent<ShipParent>().direction.x *= -1; //call parent component
 
+        }
+
+        if (collider.gameObject.CompareTag("ShipAllien"))
+        {
+            this.transform.Translate(new Vector3(0, -0.5f, 0));
         }
     }
 }

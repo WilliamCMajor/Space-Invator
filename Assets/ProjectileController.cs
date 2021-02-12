@@ -13,4 +13,14 @@ public class ProjectileController : MonoBehaviour
         transform.Translate(direction * speed * Time.deltaTime, Space.Self);
         //transform.Rotate(new Vector3(0, 0, 5));
     }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if ((collider.gameObject.tag != "DeathZoneBottom") && (collider.gameObject.tag != "ShipAllien") 
+            && (collider.gameObject.tag != "ProjectileAlien") && (collider.gameObject.tag != "Barrier"))
+        {
+
+            Destroy(collider.gameObject);
+        }
+    }
 }
