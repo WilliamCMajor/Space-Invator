@@ -12,6 +12,8 @@ TagManager:
   - DeathZoneTop
   - DeathZoneBottom
   - Barrier
+  - GameState
+  - Score
   layers:
   - Default
   - TransparentFX

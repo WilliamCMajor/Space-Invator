@@ -136,3 +136,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   direction: {x: 0, y: 1, z: 0}
+  ScoreObj: {fileID: 1973797488871700, guid: 48e06088b7e195f40898a828bd389ec3, type: 3}
