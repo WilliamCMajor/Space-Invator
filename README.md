@@ -1,20 +1,42 @@
 # Space Invator Unity
 Completed requirements
 
-(4 marks) 1. Set up a space invaders game. The player ship will be on the bottom and the alien ships will be at the top. It should contain: (completed)
-	a). A player ship that can move left and right. (completed)
-	b). Many alien ships that move left and right. (completed)
+https://github.com/WilliamCMajor/Space-Invator-build
 
-(2 marks) 2. The alien ships should change direction and move down one ship length when they hit either side of level. (completed)
 
-(4 marks) 3. Give the alien ships projectiles. They will shoot every so often, randomly. (completed)
 
-(2 marks) 4. If the projectile hits the player ship, the player ship will be destroyed. (completed)
+Add a Start Menu to the game. It will: (1 mark) Be the first screen that the player sees.---completed
 
-(4 marks) 5. Give the player ship a projectile. If the player presses the space bar, the projectile shoots upwards. (completed)
+(1 mark) When the game is first opened, display the name of your game and an opening message. ---completed
 
-(2 marks) 6. If the player projectile hits an alien ship, the alien ship will be destroyed. (completed)
+(2 marks) When the game ends, display the results of the game, and give the player an opportunity to play again. ---completed
 
-(2 marks) 7. Set up barriers that stop alien projectiles that the player ship can hide behind. (completed)
+(1 mark) Display a different message based on the results of the game (one message if the player lost, another if the player won). ---completed
 
-The barriers change colours when they are hit by enemy projectiles.(completed)
+(2 marks) Display the player's score. ---completed
+
+(1 mark) Contain a button that allows the player to start playing the game. ---completed
+
+Add Level 1, the level that you built in the first lab to this game. It will be the level loaded from the start menu. It will:
+
+(1 mark) Keep track of how many hit points the player has. ---completed
+
+(1 mark) Keep track of how many enemy ships still exist. ---completed
+
+(2 marks) Load Level 2 if the player destroys all of the enemy ships. ---completed
+
+(2 marks) Load the Start Menu if the enemies reduce the player's hit points to zero. ---completed
+
+Add Level 2 to the game. It will be loaded once the first wave of enemy bots is cleared. It will:
+
+(2 marks) Contain at least one new type of enemy bot. The new enemy bot will: ---completed
+
+(2 marks) Fire different-looking projectiles. ---completed
+
+(2 marks) Have a different sprite than the other enemies. ---completed
+
+(2 marks) Move independently of the other enemies. ---completed
+
+(2 marks) Also contain the same bots as Level 01, but ones that move at a faster speed ---completed
+
+Submit the game as a build.(1 mark) ---completed
