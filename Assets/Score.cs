@@ -4,14 +4,7 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public int score;
-    public int updatedScore;
-
-    private void Start()
-    {
-        score = 0;
-        
-    }
+    public int currentScore;
 
     private void Update()
     {
@@ -25,23 +18,21 @@ public class Score : MonoBehaviour
         if (findAlienShip.Length == 3)
             // parent ship has tag "ShipAllien", It is invisible gameObject
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(2);
         }
 
         if (findPlayerShip.Length == 0)
         {
             SceneManager.LoadScene(3);
+            FindObjectOfType<GameState>().resetScore();
         }
 
-        GetComponent<Text>().text = score.ToString();
-        updatedScore = score;
-        Debug.Log("updated Score:" + updatedScore);
+        currentScore = FindObjectOfType<GameState>().score;
+        GetComponent<Text>().text = currentScore.ToString();
+
     }
     
-    public void updateScore()
-    {
-        score += 100;
-    }
+
 
 
 }

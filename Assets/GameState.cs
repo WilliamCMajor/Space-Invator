@@ -1,10 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameState : MonoBehaviour
 {
-    public int gameStateScore;
+    public int score;
+
     private void Awake()
     {
         GameObject[] objects = GameObject.FindGameObjectsWithTag("GameState");
@@ -19,11 +19,17 @@ public class GameState : MonoBehaviour
 
     private void Start()
     {
-        //score = FindObjectOfType<Score>().updatedScore;
-        //GameObject gameState = GameObject.Find("GameState");
-        //Score score = gameState.GetComponent<Score>();
-        gameStateScore = GameObject.Find("ScoreObj").GetComponent<Score>().updatedScore;
-        Debug.Log("Game State score:" + gameStateScore);
+        score = 0;
 
+    }
+
+    public void updateScore()
+    {
+        score += 100;
+    }
+
+    public void resetScore()
+    {
+        score = 0;
     }
 }

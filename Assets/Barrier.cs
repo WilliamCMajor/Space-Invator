@@ -8,7 +8,7 @@ public class Barrier : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.gameObject.tag != "Player")
+        if(collider.gameObject.tag != "Player" && collider.gameObject.tag != "ShipLv2")
         {
             Destroy(collider.gameObject);
             this.GetComponent<MeshRenderer>().material.color = Color.red;

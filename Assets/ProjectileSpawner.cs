@@ -23,11 +23,16 @@ public class ProjectileSpawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.gameObject.CompareTag("WallLeft") || collider.gameObject.CompareTag("WallRight"))
+        if (collider.gameObject.CompareTag("WallLeft") || collider.gameObject.CompareTag("WallRight"))
         {
             this.transform.parent.GetComponent<ShipParent>().direction.x *= -1; //call parent component
 
         }
+        else if (collider.gameObject.CompareTag("DeathZoneTop") || collider.gameObject.CompareTag("DeathZoneBottom"))
+        {
+            this.transform.parent.GetComponent<ShipParent>().direction.y *= -1;
+        }
+
 
         if (collider.gameObject.CompareTag("ShipAllien"))
         {

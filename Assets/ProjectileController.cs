@@ -17,7 +17,8 @@ public class ProjectileController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if ((collider.gameObject.tag != "DeathZoneBottom") && (collider.gameObject.tag != "ShipAllien") 
-            && (collider.gameObject.tag != "ProjectileAlien") && (collider.gameObject.tag != "Barrier"))
+            && (collider.gameObject.tag != "ProjectileAlien") && (collider.gameObject.tag != "Barrier")
+            && (collider.gameObject.tag != "ShipLv2"))
         {
 
             Destroy(collider.gameObject);

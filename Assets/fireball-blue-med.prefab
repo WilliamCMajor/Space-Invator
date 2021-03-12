@@ -134,6 +134,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd5eaa929ffcea4192a6ce4f47544b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   direction: {x: 0, y: 1, z: 0}
-  ScoreObj: {fileID: 1973797488871700, guid: 48e06088b7e195f40898a828bd389ec3, type: 3}

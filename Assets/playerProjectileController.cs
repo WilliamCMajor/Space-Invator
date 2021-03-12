@@ -27,8 +27,8 @@ public class playerProjectileController : MonoBehaviour
 
         if (collider.gameObject.tag == "ShipAllien")
         {
-
-            FindObjectOfType<Score>().updateScore();
+            
+             FindObjectOfType<GameState>().updateScore();
 
         }
     }
